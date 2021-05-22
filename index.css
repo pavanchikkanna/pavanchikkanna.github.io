@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+:root{
+  --primary-color:#665df5;
+  --secondary-color:#342cd1 ;
+  --text-color:rgb(68, 68, 68) !important;
+  --background-color:rgb(255, 255, 255);
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color) ;
+  font-family: 'Nunito', sans-serif ;
+}
+.navbar-brand {
+  font-weight: normal !important;
+  font-size: 2rem;
+  cursor: pointer;
+  border-bottom: 0.3rem solid var(--primary-color);
+  color: var(--text-color);
+}
+main{
+  animation: 1.5s ease 0s intro-animation;
+}
+@keyframes intro-animation{
+  0%{
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+img{
+    max-width: 100%;
+}
+#intro{
+  font-size: 18px;
+  width: 100%;
+}
+#content{
+  margin-top: 5rem;
+}
+@media (max-width:576px) {
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+  #content{
+    margin-top: 0%;
+  }
+  #intro{
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  #greeting{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #greeting,#img{
+    margin-top: 0;
+  }
+  #links{
+    justify-content: center;
+  }
+}
+.btn-primary{
+  background-color: var(--primary-color);
+  border-radius: 0%;
+}
+#intro::selection, #greeting::selection{
+  background:var(--primary-color) ;
+  color: white;
+}
+#links{
+  list-style:none;
+  display: flex;
+  padding-left: 0%;
+}
+#links i{
+  color: var(--text-color);
+}
+#links li{
+  margin: .5rem;
+}
+#links li:hover{
+  transform: scale(1.1);
+}
+#company{
+  text-decoration: none;
+  color: var(--text-color);
+}
+#company:hover{
+  border-bottom: solid var(--primary-color);
+}

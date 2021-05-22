@@ -1,2 +1,3 @@
-# pavanchikkanna.github.io
-My portfolio
+# Hi :wave:
+
+check out my [portfolio](https://pavanchikkanna.github.io/)
